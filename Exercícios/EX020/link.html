@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            color: brown;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: crimson;
+        }
+
+        a:hover {
+            color: darkred;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: coral;
+        }
+        
+        a::after {
+            content: '(link)';
+            color: beige;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/c/CortesdoCasimitoOFICIAL" target="_blank">Canal Youtube Casimiro</a></li>
+
+        <li><a href="https://www.youtube.com/channel/UCjouVssfLpdTj4igZTw0saw" target="_blank">Canal Youtube Inspire Outras</a></li>
+
+        <li><a href="https://www.youtube.com/c/JOKESSTANDUPCOMEDY" target="_blank">Canal Youtube Jokes Stand Up</a></li>
+    </ul>
+</body>
+</html>
